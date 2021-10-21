@@ -1,5 +1,18 @@
 header {
+    padding: 20px 0;
     background: #BBBBBB;
+}
+
+.cabecalho {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 110px;
 }
 
 nav li {
