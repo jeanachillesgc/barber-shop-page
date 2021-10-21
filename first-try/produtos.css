@@ -40,7 +40,7 @@ nav a:hover{
 
 .produtos li{
     width: 30%;
-    margin: 0 1.5%;
+    margin: 40px 1.5%;
     padding: 30px 20px;
     text-align: center;
     border-radius: 10px; /*border-radius: 10px 10px 10px 10px*/
@@ -75,4 +75,16 @@ nav a:hover{
     font-size: 22px;
     margin-top: 10px;
     font-weight: bold;
+}
+
+footer{
+    padding: 40px 0;
+    text-align: center;
+    background: url("bg.jpg");
+}
+
+.copyright{
+    font-size: 18px;
+    margin-top: 20px;
+    color: #FFFFFF;    
 }
