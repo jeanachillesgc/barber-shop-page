@@ -86,7 +86,7 @@ form{
     margin: 40px 0;
 }
 
-form label, form p{    
+form label, form legend{    
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -103,6 +103,39 @@ form label, form p{
     margin: 20px 0;
 }
 
+.enviar{
+    width: 40%;
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: orange;
+    transition: 0.3s all;
+}
+
+.enviar:hover{
+    background: red;
+    transform: scale(1.02); /*transform: scale(1.1) rotate(360deg);*/
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    color: white;
+    font-weight: bold;
+    background: #555555;    
+}
+
+td, th{
+    padding: 8px 15px;
+    border: 1px solid #000000;
+}
+
 footer{
     padding: 40px 0;
     text-align: center;
@@ -113,4 +146,9 @@ footer{
     font-size: 18px;
     margin-top: 20px;
     color: #FFFFFF;    
+}
+
+/*HOME*/
+.banner{
+
 }
