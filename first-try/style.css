@@ -1,48 +1,116 @@
-#banner {
-    width: 100%;
+header {
+    padding: 20px 0;
+    background: #BBBBBB;
 }
 
-.principal {
-    background: #CCCCCC;
-    padding: 30px;
+.cabecalho {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.titulo-principal {
-    padding-left: 20px;
+nav {
+    position: absolute;
+    right: 0;
+    top: 110px;
 }
 
-.titulo-centralizado {
+nav li {
+    display: inline;    
+    margin: 0 0 0 15px; /*top right bottom left*/
+}
+
+nav a {
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;        
+}
+
+nav a:hover{
+    color:#C78C19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.produtos li{
+    width: 30%;
+    margin: 40px 1.5%;
+    padding: 30px 20px;
     text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-#missao {
-    font-size: 20px;
-}
-
-em strong {
-    color: red;
-}
-
-ul {
-    display: inline-block;
+    border-radius: 10px; /*border-radius: 10px 10px 10px 10px*/
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    display: inline-block;
+    box-sizing: border-box;    
+    border: 2px solid #000000;/*border-color: #000000; border-width: 2px; border-style: solid;*/
 }
 
-.itens {
-    font-style: italic; 
+.produtos li:hover{
+    border-color:#C78C19;
 }
 
-.beneficios{
-    background: #FFFFFF;    
+.produtos li:active{
+    border-color: #088C19;
 }
 
-.imagembeneficios{
+.produtos li:hover h2{
+    font-size: 32px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{    
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{    
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
     width: 50%;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
 }
 
+.checkbox{
+    margin: 20px 0;
+}
+
+footer{
+    padding: 40px 0;
+    text-align: center;
+    background: url("bg.jpg");
+}
+
+.copyright{
+    font-size: 18px;
+    margin-top: 20px;
+    color: #FFFFFF;    
+}
