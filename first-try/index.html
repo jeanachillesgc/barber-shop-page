@@ -1,16 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
+<!DOCTYPE html><!--Informa ao navegador o tipo de arquivo-->
+<html lang="pt-BR"><!--Informa qual o idioma nativo da página. O navegador pode sugerir a tradução automática para falantes de outro idioma-->
+<!--head é a tag da "informação sobre a informação". Dentro dela iremos passar informações para o navegador de como ele deve se relacionar com essa página.
+Os itens dentro da tag head não são exibidos na página-->
 <head>
+    <!--Character Encoding. Informa a sequência de bytes iremos usar para interpretar o texto. 
+    UTF-8 é a sequência que possui os caracteres necessários para praticamente qualquer idioma-->
     <meta charset="UTF-8">
+    <!--É usado para simular uma resposta HTTP. Nesse caso X-UA-Compatible é exclusivo para Internet Explorer, 
+    ele diz para renderizar o site com a versão mais recente do navegador-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport é uma informação sobre a área visível da página. width=device-width configura a largura da página para seguir a largura do dispositivo.
+    initial-scale=1.0 é o nível de zoom que essa página deve ter quando for carregada pela primeira vez-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--rel indica para o navegador que a relação do documento com o recurso informado em href-->
+    <!--declaração do arquivo css que iremos usar-->
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
+    <!--importação da fonte Montserrat através do site google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
+    <!--Título que aparecerá na guia da página-->
     <title>Barbearia Alura</title>
 </head>
 
