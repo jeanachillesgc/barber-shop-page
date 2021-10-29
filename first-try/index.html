@@ -24,13 +24,30 @@ Os itens dentro da tag head não são exibidos na página-->
     <title>Barbearia Alura</title>
 </head>
 
+<!--define o corpo do documento HTML. É dentro da <body> que todo o conteúdo que deve aparecer na página web fica: cabeçalhos, parágrafos, imagens, tabelas
+listas e etc. Só pode haver 1 <body> em todo o documento-->
 <body>
+    <!--Representa um container para um conteúdo introdutório ou um grupo de links de navegação. Uma página pode ter vários headers, porém eles não podem estar dentro de uma tag
+    <footer>, <address> ou outro <header>-->
     <header>
+        <!--div é um container genérico pra qualquer conteúdo. Não tem efeito no conteúdo e nem no layout da página até que você o estilize usando CSS.
+        Geralmente é usado para tornar mais fácil estilizar um agrupamento de elementos usando a class ou id.-->
         <div class="cabecalho">
-            <h1><img src="logo.png"></h1>
-
-            <!--ul = Unordered List-->
+            <!--Do h1 ao h6, eles representam níveis de títulos/sub-títulos de sessão, sendo o h1 a sessão mais alta, e h6 a mais baixa.
+            É permitido usar mais de um <h1> por página, porém é considerado uma boa prática usar somente um dele. Essa prática favorece
+            leitores de páginas e a construção automática de uma tabela dos conteúdos de uma página-->
+            <h1>
+                <!--incorpora uma imagem à página. O atributo src é obrigatório pois contém o caminho para a página incorporada.
+                O atributo alt não é obrigatório, mas é muito útil por questões de acessibilidade, leitores de página lêem ele para informar ao usuário
+                o que a imagem significa. Ele também é mostrado na página se algum problema impedir que a imagem seja carregada. 
+                O formato da imagem que pode ser usado vai variar dependendo do agente de usuário usado. Você também pode omitir o alt usando alt="", desta forma
+                fica sub-entendido que esta imagem não é ponto chave do conteúdo e navegadores não-visuais não irão renderizá-la-->
+                <img src="logo.png" alt="Logo da Barbearia Alura">
+            </h1>
+            <!--Representa uma sessão da página cujo propósito é prover links de navegação para o atual documento ou para outros documentos. Menus,
+            tabelas de conteúdos, indexes, ou mesmo um texto que aponta para outras partes de um documento.-->
             <nav>
+                <!--ul = Unordered List-->
                 <ul>
                     <!--li = List Item--><!--a = anchor-->
                     <li><a href="index.html">Home</a></li>
@@ -81,7 +98,7 @@ Os itens dentro da tag head não são exibidos na página-->
                     <li class="itens">Profissionais Qualificados</li>
                     <li class="itens">Pontualidade</li>
                     <li class="itens">Limpeza</li>
-                </ul><img src="beneficios.jpg" class="imagem-beneficios">
+                </ul><img src="beneficios.jpg" class="imagem-beneficios" decoding="async" loading="lazy">
             </div>
 
             <div class="video">
@@ -90,8 +107,8 @@ Os itens dentro da tag head não são exibidos na página-->
         </section>
     </main>
 
-    <footer>
-        <img src="logo-branco.png">
+    <footer>        
+        <img src="logo-branco.png" decoding="async" loading="lazy">
         <!--https://unicode-table.com/en/00A9/-->
         <p class="copyright">&copy; Copyright Barbearia Alura 2019</p>
     </footer>
