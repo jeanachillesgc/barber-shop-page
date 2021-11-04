@@ -2,20 +2,24 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="contato.css">        
+        <link rel="stylesheet" href="contato.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    
         <title>Contato - Barbearia Alura</title>
     </head>   
 
     <body>
-            <div class="background-layer">
-            <header>
-                <div>
+        <div class="background">
+            <div class="layer">
+                <header>
                     <div class="navegacao">
                         <h1><img class="logo" src="logo-branco.png"></h1>
-        
-                        <!--ul = Unordered List-->
+                        
                         <nav>
                             <ul>                    
                                 <!--li = List Item--><!--a = anchor-->
@@ -24,78 +28,87 @@
                                 <li><a href="contato.html">Contato</a></li>
                             </ul>
                         </nav>
-                    </div>
-                </div>            
-            </header>        
+                    </div><!--navegacao-->                                
+                </header>      
 
-            <main>
-                <form>
-                    <label for="nomesobrenome">Nome e Sobrenome</label>
-                    <input class="input-padrao" type="text" id="nomesobrenome" required>
+                <main>
+                    <div class="form-background">
+                        <form>
+                            <label for="nomesobrenome">Nome e Sobrenome</label>
+                            <input class="input-padrao" type="text" id="nomesobrenome" required>
 
-                    <label for="email">E-mail</label>
-                    <input class="input-padrao" type="email" id="email" required placeholder="seuemail@dominio.com">
+                            <label for="email">E-mail</label>
+                            <input class="input-padrao" type="email" id="email" required placeholder="seuemail@dominio.com">
 
-                    <label for="telefone">Telefone</label>
-                    <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) X XXXX XXXX">
+                            <label for="telefone">Telefone</label>
+                            <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) X XXXX XXXX">
 
-                    <label for="mensagem">Mensagem</label>
-                    <textarea class="input-padrao" id="mensagem" cols="30" rows="10" required></textarea>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="input-padrao" id="mensagem" cols="30" rows="10" required></textarea>
 
-                    <fieldset>
-                        <legend>Como prefere nosso contato?</legend>
-                        <label for="radio-email">
-                            <input type="radio" name="contato" id="radio-email" value="email">
-                            Email
-                        </label>                    
-                        <label for="radio-telefone">
-                            <input type="radio" name="contato" id="radio-telefone" value="telefone">
-                            Telefone
-                        </label>                    
-                        <label for="radio-whatsapp">
-                            <input type="radio" name="contato" id="radio-whatsapp" value="whatsapp" checked>
-                            Whatsapp
-                        </label>                    
-                    </fieldset>
+                            <fieldset>
+                                <legend>Como prefere nosso contato?</legend>
+                                <label for="radio-email">
+                                    <input type="radio" name="contato" id="radio-email" value="email">
+                                    Email
+                                </label>                    
+                                <label for="radio-telefone">
+                                    <input type="radio" name="contato" id="radio-telefone" value="telefone">
+                                    Telefone
+                                </label>                    
+                                <label for="radio-whatsapp">
+                                    <input type="radio" name="contato" id="radio-whatsapp" value="whatsapp" checked>
+                                    Whatsapp
+                                </label>                    
+                            </fieldset>
 
-                    <fieldset>
-                        <legend>Qual horário prefere ser atendido?</legend>
-                        <select>
-                            <option value="">Manhã</option>
-                            <option value="">Tarde</option>
-                            <option value="">Noite</option>
-                        </select>
-                    </fieldset>               
+                            <fieldset>
+                                <legend>Qual horário prefere ser atendido?</legend>
+                                <select>
+                                    <option value="">Manhã</option>
+                                    <option value="">Tarde</option>
+                                    <option value="">Noite</option>
+                                </select>
+                            </fieldset>               
 
-                    <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+                            <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+                            <div class="align-submit">
+                                <input class="enviar" type="submit" value="Enviar">
+                            </div>
+                        </form>
 
-                    <input class="enviar" type="submit" value="Enviar">
-                </form>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Dia</th>
+                                    <th>Horário</th>
+                                </tr>
+                            </thead>
+                            <tbody>                
+                                <tr>
+                                    <td>Segunda</td>
+                                    <td>8h ~ 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Quarta</td>
+                                    <td>8h ~ 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Sexta</td>
+                                    <td>8h ~ 20h</td>
+                                </tr>
+                            </tbody>               
+                        </table>
+                    </div><!--form-background-->
+                </main>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dia</th>
-                            <th>Horário</th>
-                        </tr>
-                    </thead>
-                    <tbody>                
-                        <tr>
-                            <td>Segunda</td>
-                            <td>8h ~ 20h</td>
-                        </tr>
-                        <tr>
-                            <td>Quarta</td>
-                            <td>8h ~ 20h</td>
-                        </tr>
-                        <tr>
-                            <td>Sexta</td>
-                            <td>8h ~ 20h</td>
-                        </tr>
-                    </tbody>               
-                </table>
-            </main>
-        </div>
+                <footer>
+                    <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+                    <!--https://unicode-table.com/en/00A9/-->
+                    <p class="copyright">&copy; Copyright Barbearia Alura 2019</p>
+                </footer>
+            </div><!--layer-->
+        </div><!--background-->
         <footer>
             <img src="logo-branco.png" alt="Logo da Barbearia Alura">
             <!--https://unicode-table.com/en/00A9/-->

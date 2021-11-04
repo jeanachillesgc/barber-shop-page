@@ -1,7 +1,7 @@
 /*index.html MAIN*/
 .mapa{
     height: 400px;
-    background: url(location-background.jpg) 0% 0% / 100%;
+    background: url(location-background.jpg) 50% 0% / 150%; 
 }
 
 .mapa .layer{
